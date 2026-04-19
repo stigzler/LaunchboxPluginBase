@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Stigzler",
+  "classifications": [
+    "LaunchBox",
+    "Plugin"
+  ],
+  "identity": "Launchbox.Plugin.Template.CSharp",
+  "name": "LaunchBox Plugin",
+  "shortName": "launchbox-plugin",
+  "sourceName": "LaunchboxPlugin",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "primaryOutputs": [
+    {
+      "path": "LaunchboxPlugin.slnx"
+    }
+  ],
+  "sources": [
+    {
+      "source": "./",
+      "target": "./",
+      "exclude": [
+        ".template.config/**",
+        ".git/**",
+        "**/[Bb]in/**",
+        "**/[Oo]bj/**",
+        "**/.vs/**",
+        "**/*.user",
+        "**/*.suo",
+        "**/*.lock.json"
+      ],
+      "modifiers": [
+        {
+          "condition": "(IncludeDevDocs == false)",
+          "exclude": [
+            "dev/**"
+          ]
+        },
+        {
+          "condition": "(IncludeUserDocs == false)",
+          "exclude": [
+            "docs/**"
+          ]
+        }
+      ]
+    }
+  ],
+  "symbols": {
+    "LaunchBoxPluginsPath": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "C:/Users/YourUser/LaunchBox/Plugins",
+      "replaces": "C:\\Users\\stigz\\LaunchBoxDevelopmentInstall\\Plugins",
+      "displayName": "LaunchBox Plugins Path",
+      "description": "The full path to your LaunchBox plugins directory (where the plugin will be copied after build)."
+    },
+    "IncludeDevDocs": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "displayName": "Include Dev Documentation",
+      "description": "Include the dev folder with development documentation and images (recommended)"
+    },
+    "IncludeUserDocs": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "displayName": "Include User Documentation",
+      "description": "Include the docs folder with user documentation (recommended)"
+    }
+  }
+}

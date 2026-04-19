@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	  <Exec Command="call &quot;$(SolutionDir)\build\scripts\moveDebugBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(SolutionDir)&quot; &quot;C:\Users\stigz\LaunchBoxDevelopmentInstall\Plugins\MyPlugin&quot; &quot;src\LaunchboxPlugin.Core\bin\Debug\net9.0&quot;" />
+	  <Exec Command="call &quot;$(SolutionDir)\build\scripts\moveDebugBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(SolutionDir)&quot; &quot;C:\Users\stigz\LaunchBoxDevelopmentInstall\Plugins\LaunchboxPlugin&quot; &quot;src\LaunchboxPlugin.Core\bin\Debug\net9.0&quot;" />
 	</Target>
 
 </Project>

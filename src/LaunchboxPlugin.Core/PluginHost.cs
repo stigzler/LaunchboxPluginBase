@@ -11,7 +11,7 @@ namespace LaunchboxPlugin.Core
 {
     internal class PluginHost : ISystemMenuItemPlugin
     {
-        public string Caption => "My Awesome Plugin";
+        public string Caption => "LaunchBox Plugin";
 
         public Image IconImage => null;
 
@@ -23,7 +23,7 @@ namespace LaunchboxPlugin.Core
 
         public void OnSelected()
         {
-            Debug.WriteLine("PLUGIN: My Awesome Plugin was selected!");
+            Debug.WriteLine("PLUGIN: LaunchBox Plugin was selected!");
         }
     }
 }

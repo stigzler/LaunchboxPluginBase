@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LaunchboxPlugin.Core/LaunchboxPlugin.Core.csproj" Id="71c04262-7b2e-422a-882b-f80a46230bc9" />
+  </Folder>
+  <Project Path="build/build.shproj" />
+  <Project Path="dev/dev.shproj" />
+  <Project Path="docs/docs.shproj" />
+  <Project Path="lib/lib.shproj" />
+  <Project Path="tests/tests.shproj" />
+</Solution>
