@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="System.Drawing.Common">
+			<HintPath>..\..\lib\launchbox\System.Drawing.Common.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="Unbroken.LaunchBox.Plugins">
+			<HintPath>..\..\lib\launchbox\Unbroken.LaunchBox.Plugins.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="call &quot;$(SolutionDir)\build\scripts\moveDebugBuild.bat&quot; &quot;$(ConfigurationName)&quot; &quot;$(SolutionDir)&quot; &quot;C:\Users\stigz\LaunchBoxDevelopmentInstall\Plugins\MyPlugin&quot; &quot;src\LaunchboxPlugin.Core\bin\Debug\net9.0&quot;" />
+	</Target>
+
+</Project>

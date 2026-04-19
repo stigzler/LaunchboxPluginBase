@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "LaunchboxPlugin.Core": {
+      "commandName": "Project"
+    },
+    "PluginDebug": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\stigz\\LaunchBoxDevelopmentInstall\\Core\\LaunchBox.exe"
+    }
+  }
+}
