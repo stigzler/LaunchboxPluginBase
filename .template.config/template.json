@@ -9,14 +9,25 @@
   "name": "LaunchBox Plugin",
   "shortName": "launchbox-plugin",
   "sourceName": "LaunchboxPlugin",
-  "preferNameDirectory": false,
+  "preferNameDirectory": true,
   "tags": {
     "language": "C#",
-    "type": "project"
+    "type": "solution"
   },
   "primaryOutputs": [
     {
       "path": "LaunchboxPlugin.slnx"
+    }
+  ],
+  "postActions": [
+    {
+      "actionId": "D396686C-DE0E-4DE6-906D-291CD29FC5DE",
+      "description": "Opens the solution in Visual Studio",
+      "manualInstructions": [],
+      "args": {
+        "files": "0"
+      },
+      "continueOnError": true
     }
   ],
   "sources": [
@@ -32,20 +43,6 @@
         "**/*.user",
         "**/*.suo",
         "**/*.lock.json"
-      ],
-      "modifiers": [
-        {
-          "condition": "(IncludeDevDocs == false)",
-          "exclude": [
-            "dev/**"
-          ]
-        },
-        {
-          "condition": "(IncludeUserDocs == false)",
-          "exclude": [
-            "docs/**"
-          ]
-        }
       ]
     }
   ],
@@ -57,20 +54,6 @@
       "replaces": "C:\\Users\\stigz\\LaunchBoxDevelopmentInstall\\Plugins",
       "displayName": "LaunchBox Plugins Path",
       "description": "The full path to your LaunchBox plugins directory (where the plugin will be copied after build)."
-    },
-    "IncludeDevDocs": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "true",
-      "displayName": "Include Dev Documentation",
-      "description": "Include the dev folder with development documentation and images (recommended)"
-    },
-    "IncludeUserDocs": {
-      "type": "parameter",
-      "datatype": "bool",
-      "defaultValue": "true",
-      "displayName": "Include User Documentation",
-      "description": "Include the docs folder with user documentation (recommended)"
     }
   }
 }
