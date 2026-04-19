@@ -3,6 +3,9 @@
   <Folder Name="/build/scripts/">
     <File Path="build/scripts/moveDebugBuild.bat" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="readme.md" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/LaunchboxPlugin.Core/LaunchboxPlugin.Core.csproj" Id="71c04262-7b2e-422a-882b-f80a46230bc9" />
   </Folder>
