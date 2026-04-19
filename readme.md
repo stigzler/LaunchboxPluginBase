@@ -8,6 +8,24 @@ This template stores any libraries that are shared with Launchbox (in the Core f
 
 It should run without modification, but it is worth updating these to the latest versions form your Launchbox installation. DO NOT install these form a Beta version. Only from Release versions (you can temp install the Launchbox below beta version to get the relevant libs if you need to).
 
+## Installing the LaunchBox Plugin Template
+
+1. Download the Template
+Download the latest LaunchboxPlugin.zip from the releases page or your distribution source.
+
+2. Install the Template
+Open a terminal (PowerShell or Command Prompt) and run:
+`dotnet new install path\to\LaunchboxPlugin.zip`
+Replace path\to\LaunchboxPlugin.zip with the actual path to the downloaded zip file.
+
+3. Create a New Project from the Template
+After installing, open Visual Studio and go to `File > New > Project`. Search for LaunchBox Plugin in the project templates.
+•    Make sure to check "Place solution and project in the same directory" during creation.
+
+4. Uninstall the Template (Optional)
+If you ever want to remove the template, run:
+`dotnet new uninstall path\to\LaunchboxPlugin.zip`
+
 ## Getting Started
 
 Create a new project form this template. Make sure you select "Place solution and project in the same directory" when creating the project. This will ensure that the plugin is created in the correct location for Launchbox to find it.
