@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Stigzler",
+  "author": "stigzler",
   "classifications": [
     "LaunchBox",
     "Plugin"
@@ -9,7 +9,7 @@
   "name": "LaunchBox Plugin",
   "shortName": "launchbox-plugin",
   "sourceName": "LaunchboxPlugin",
-  "preferNameDirectory": true,
+  "preferNameDirectory": false,
   "tags": {
     "language": "C#",
     "type": "project"
@@ -61,7 +61,7 @@
     "IncludeDevDocs": {
       "type": "parameter",
       "datatype": "bool",
-      "defaultValue": "false",
+      "defaultValue": "true",
       "displayName": "Include Dev Documentation",
       "description": "Include the dev folder with development documentation and images (recommended)"
     },
