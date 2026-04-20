@@ -15,7 +15,7 @@ Download the latest LaunchboxPlugin.zip from the releases page or your distribut
 
 2. Install the Template
 Open a terminal (PowerShell or Command Prompt) and run:
-`dotnet new install path\to\LaunchboxPlugin.zip`
+`dotnet new install path\to\Launchbox-Plugin-Base.zip`
 Replace path\to\Launchbox-Plugin-Base.zip with the actual path to the downloaded zip file.
 
 3. Create a New Project from the Template
